@@ -109,8 +109,8 @@ while true; do
     echo -e "         [k]illswitch on | killswitch [o]ff | [a]uto | [h]elp | [q]uit\n"
 
     # Input (determine default Input value)
-    if [ "${KILLSWITCH:13:8}" = "disabled" ] && [ "${CONNECTION:14:9}" = "Connected" ] ; then  # 'en' if killswitch is disabled but connection is established.
-            read -e -p "Command: " -i "en" INPUT
+    if [ "${KILLSWITCH:13:8}" = "disabled" ] && [ "${CONNECTION:14:9}" = "Connected" ] ; then  # 'kn' if killswitch is disabled but connection is established.
+            read -e -p "Command: " -i "kn" INPUT
         
     elif [ "$COUNTRIESET" = "1" ]; then  # 'cn' if a new Countrie was set.
         read -e -p "Command: " -i "cn" INPUT
